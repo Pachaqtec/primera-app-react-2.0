@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react'
+import './App.css'
+
+class Footer extends Component {
+  render() {
+    return (
+      <>
+        <h1>Footer</h1>
+        <span>Fin</span>
+        <h1>Footer</h1>
+        <span>Fin</span>
+        <h1>Footer</h1>
+        <span>Fin</span>
+      </>
+    )
+  }
+}
+
+const Body = () => {
+  let nombre = 'React.js'
+  return (
+    <>
+      <h1>Hello world {nombre}</h1>
+      <div>{`Hello world ${nombre}`}</div>
+    </>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Body />
+      <Footer />
+      <Footer />
+      <Footer />
+      <Footer />
+      <Footer />
+      <Footer />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
